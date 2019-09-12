@@ -96,6 +96,7 @@
             return base.QueryState(context);
         }
 
+        // Get item in current content language
         private Item GetItemInCurrentContentLanguage(Item item)
         {
             if (Sitecore.Security.Accounts.User.Current.Profile.ContentLanguage.Length != 0 && (item.Language.ToString() != Sitecore.Security.Accounts.User.Current.Profile.ContentLanguage))
